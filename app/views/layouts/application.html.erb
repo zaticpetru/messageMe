@@ -2,8 +2,10 @@
 <html>
   <head>
     <title>Message Me</title>
+    <%= favicon_link_tag 'favicon.png' %>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -12,6 +14,7 @@
   <body>
     <%= render 'layouts/navigation'%>
     <div class="ui container">
+      <%= render 'layouts/messages' %>
       <%= yield %>
     </div>
   </body>
